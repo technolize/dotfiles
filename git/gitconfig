@@ -1,0 +1,76 @@
+[include]
+	path = ~/.gitconfig.local
+
+[color]
+	ui = auto
+
+[core]
+	attributesfile = ~/.gitattributes
+	excludesfile = ~/.gitignore
+	autocrlf = input
+	quotepath = false
+	precomposeunicode = true
+	safecrlf = true
+
+[merge]
+;	ff = false
+	tool = Kaleidoscope
+
+[pull]
+	rebase = true
+
+[push]
+	default = simple
+
+[log]
+	decorate = true
+
+[alias]
+	l = log --oneline --graph --decorate -n 30
+	st = status -sb
+	sh = show
+	ci = commit -v
+	co = checkout
+	br = branch -v
+	root = rev-parse --show-toplevel
+	cdiff = diff --color-words
+	history = log --graph --relative-date --name-status -5
+	append = commit --amend -C HEAD
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+
+[pager]
+	log = diff-highlight | less
+	show = diff-highlight | less
+	diff = diff-highlight | less
+
+[grep]
+	lineNumber = true
+
+[diff]
+	tool = Kaleidoscope
+;	algorithm = patience
+	algorithm = histogram
+
+[difftool]
+	prompt = false
+
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+
+[mergetool]
+	prompt = false
+
+[receive]
+	denyDeleteCurrent = ignore
+
+[rebase]
+	autosquash = true
+
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+
+[ghq]
+	root = ~/src
+

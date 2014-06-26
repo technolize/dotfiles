@@ -1,0 +1,14 @@
+set nocursorline " don't highlight current line
+set tabstop=4
+
+" keyboard shortcuts
+inoremap jj <ESC>
+
+" gui settings
+if (&t_Co == 256 || has('gui_running'))
+  if ($TERM_PROGRAM == 'iTerm.app')
+    colorscheme Tomorrow-Night-Eighties
+  else
+    colorscheme desert
+  endif
+endif

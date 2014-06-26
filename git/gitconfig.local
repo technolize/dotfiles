@@ -1,0 +1,7 @@
+[user]
+	name = technolize
+	email = me@technolize.net
+
+[credential]
+	helper = osxkeychain
+

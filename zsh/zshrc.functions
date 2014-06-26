@@ -1,0 +1,35 @@
+# zshrc.functions
+
+typeset -ga preexec_functions
+function _vcsinfo_preexec() {
+  psvar=()
+  LANG=en_US.UTF-8 vcs_info
+  [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
+}
+preexec_functions+=_vcsinfo_preexec
+
+typeset -ga chpwd_functions
+function _xxx_ls() {
+  ls
+}
+chpwd_functions+=_xxx_ls
+chpwd_functions+=_vcsinfo_preexec
+
+# show current context (C-X h)
+bindkey '^Xh' _complete_help
+
+function exists { which $1 &> /dev/null }
+
+if exists peco; then
+  function percol_select_history() {
+    local tac
+    exists gtac && tac="gtac" || { exists tac && tac="tac" || { tac="tail -r" } }
+    BUFFER=$(fc -l -n 1 | eval $tac | percol --query "$LBUFFER")
+    CURSOR=$#BUFFER         # move cursor
+    zle -R -c               # refresh
+  }
+
+  zle -N percol_select_history
+  bindkey '^R' percol_select_history
+fi
+
