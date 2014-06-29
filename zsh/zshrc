@@ -1,18 +1,16 @@
 # .zshrc
 
-## oh-my-zsh
-ZSH=~/.oh-my-zsh
-ZSH_THEME="tx"
-plugins=(git tmux zsh-syntax-highlighting)
-DISABLE_AUTO_UPDATE="false"
+## antigen
+[ -f ~/.zsh/antigen/antigen.zsh ] && source ~/.zsh/zshrc.antigen
 
-[ -d $ZSH ] && source $ZSH/oh-my-zsh.sh
+## theme
+[ -f ~/.zsh/themes/tx.zsh-theme ] && source ~/.zsh/themes/tx.zsh-theme
 
 ## load modules
 [ -f ~/.zsh/zshrc.core ] && source ~/.zsh/zshrc.core
 [ -f ~/.zsh/zshrc.extensions ] && source ~/.zsh/zshrc.extensions
-[ -f ~/.zsh/zshrc.functions ] && source ~/.zsh/zshrc.functions
 [ -f ~/.zsh/zshrc.aliases ] && source ~/.zsh/zshrc.aliases
+[ -f ~/.zsh/zshrc.functions ] && source ~/.zsh/zshrc.functions
 
 case ${OSTYPE} in
   darwin*)
