@@ -60,6 +60,7 @@ install s3cmd || true
 install unbound || true
 install nmap || true
 install wireshark || true
+install tcpdump || true
 install rtmpdump || true
 install gnupg || true
 
