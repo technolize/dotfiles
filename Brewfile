@@ -92,7 +92,7 @@ cask install vagrant || true
 cask install dropbox || true
 cask install imageoptim || true
 cask install slate || true
-cask install mou || true
+cask install macdown || true
 
 cask cleanup
 
