@@ -6,8 +6,8 @@ path=(
   $HOME/.cabal/bin
   $HOME/.phpenv/bin
   $HOME/.composer/vendor/bin
+  /usr/local/opt/go/libexec/bin
   /usr/local/heroku/bin
-  /usr/local/share/python
   /usr/local/share/npm/bin
   /usr/local/opt/ruby/bin
   /usr/local/opt/coreutils/libexec/gnubin
@@ -18,6 +18,8 @@ path=(
 alias rm=rmtrash
 alias here='open .'
 alias -g C='| nkf -w | pbcopy'
+
+alias chrome='open -a "Google Chrome"'
 
 export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer
 

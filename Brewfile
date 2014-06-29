@@ -14,7 +14,7 @@ tap motemen/ghq || true
 
 ## library
 install openssl || true
-install curl --with-openssl || true
+install curl || true
 install readline || true
 install pcre || true
 install libyaml || true
@@ -23,6 +23,7 @@ install protobuf || true
 
 ## shell
 install zsh || true
+install zsh-completions || true
 install tmux || true
 
 ## development tool
@@ -83,12 +84,14 @@ cleanup
 ## cask
 install brew-cask || true
 
+cask install xquartz || true
 cask install iterm2 || true
 cask install virtualbox || true
 cask install vagrant || true
 cask install dropbox || true
 cask install imageoptim || true
 cask install slate || true
+cask install mou || true
 
 cask cleanup
 
