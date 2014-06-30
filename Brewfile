@@ -85,10 +85,13 @@ cleanup
 ## cask
 install brew-cask || true
 
+cask install keyremap4macbook || true
+cask install seil || true
 cask install xquartz || true
 cask install iterm2 || true
 cask install virtualbox || true
 cask install vagrant || true
+cask install boot2docker || true
 cask install dropbox || true
 cask install imageoptim || true
 cask install slate || true
