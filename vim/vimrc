@@ -9,13 +9,17 @@ set nocompatible
 " NeoBundle
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
-  call neobundle#rc(expand('~/.vim/bundle/'))
 endif
 
+call neobundle#rc(expand('~/.vim/bundle/'))
+
+execute "NeoBundle 'Shougo/vimproc.vim'," . string({'build': {'mac': 'make -f make_mac.mak', 'unix': 'make -f make_unix.mak',},})
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimfiler'
 NeoBundle 'Shougo/neocomplcache'
-execute "NeoBundle 'Shougo/vimproc.vim'," . string({'build': {'mac': 'make -f make_mac.mak', 'unix': 'make -f make_unix.mak',},})
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'VimClojure'
 NeoBundle 'jpalardy/vim-slime'
@@ -26,6 +30,9 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'osyo-manga/vim-over'
 NeoBundle 'LeafCage/yankround.vim'
 NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'vim-scripts/php-cs-fixer'
+NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'scrooloose/syntastic'
 
 call neobundle#end()
 
@@ -188,6 +195,9 @@ let g:unite_enable_smart_case = 1
 
 nnoremap <silent> ,g :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
 nnoremap <silent> ,r :<C-u>UniteResume search-buffer<CR>
+
+" vimfiler
+let g:vimfiler_as_default_explorer = 1
 
 if executable('pt')
   let g:unite_source_grep_command = 'pt'

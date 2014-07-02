@@ -12,3 +12,7 @@ if (&t_Co == 256 || has('gui_running'))
     colorscheme desert
   endif
 endif
+
+" php-cs-fixer
+let g:php_cs_fixer_path = '~/.composer/vendor/bin/php-cs-fixer'
+

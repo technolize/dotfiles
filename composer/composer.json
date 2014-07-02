@@ -1,6 +1,7 @@
 {
     "require": {
         "phpunit/phpunit": "4.1.*",
-        "psy/psysh": "*"
+        "psy/psysh": "*",
+        "fabpot/php-cs-fixer": "@stable"
     }
 }
