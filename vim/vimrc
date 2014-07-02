@@ -33,6 +33,8 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'vim-scripts/php-cs-fixer'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'mihaifm/bufstop'
 
 call neobundle#end()
 
