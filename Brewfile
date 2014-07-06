@@ -8,7 +8,6 @@ upgrade || true
 tap homebrew/binary || true
 tap homebrew/versions || true
 tap caskroom/cask || true
-tap monochromegane/pt || true
 tap peco/peco || true
 tap motemen/ghq || true
 
@@ -31,6 +30,7 @@ install mercurial || true
 install git || true
 install git-flow || true
 install tig || true
+install gh || true
 install ghq || true
 install automake || true
 install autoconf || true
@@ -41,7 +41,7 @@ install clib || true
 install direnv || true
 install coreutils || true
 install rlwrap || true
-install pt || true
+install the_platinum_searcher || true
 install peco || true
 install pwgen || true
 install nkf || true
@@ -96,6 +96,7 @@ cask install dropbox || true
 cask install imageoptim || true
 cask install slate || true
 cask install macdown || true
+cask install hydra || true
 
 cask cleanup
 
