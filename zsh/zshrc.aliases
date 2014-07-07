@@ -1,5 +1,6 @@
 # zshrc.aliases
 
+alias brew='nocorrect brew'
 alias git='nocorrect git'
 
 alias ls='ls -Fhv --color=auto --group-directories-first'

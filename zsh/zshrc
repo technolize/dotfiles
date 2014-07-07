@@ -1,13 +1,11 @@
 # .zshrc
 
-## antigen
-[ -f ~/.zsh/antigen/antigen.zsh ] && source ~/.zsh/zshrc.antigen
-
 ## theme
 [ -f ~/.zsh/themes/tx.zsh-theme ] && source ~/.zsh/themes/tx.zsh-theme
 
 ## load modules
 [ -f ~/.zsh/zshrc.core ] && source ~/.zsh/zshrc.core
+[ -f ~/.zsh/antigen/antigen.zsh ] && source ~/.zsh/zshrc.antigen
 [ -f ~/.zsh/zshrc.extensions ] && source ~/.zsh/zshrc.extensions
 [ -f ~/.zsh/zshrc.aliases ] && source ~/.zsh/zshrc.aliases
 [ -f ~/.zsh/zshrc.functions ] && source ~/.zsh/zshrc.functions
