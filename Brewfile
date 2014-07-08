@@ -36,6 +36,7 @@ install automake || true
 install autoconf || true
 install cmake || true
 install clib || true
+install ctags || true
 
 ## utility
 install direnv || true
@@ -79,6 +80,7 @@ install haskell-platform || true
 install lame || true
 install ffmpeg || true
 install imagemagick || true
+install pngquant || true
 
 cleanup
 
