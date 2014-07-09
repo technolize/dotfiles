@@ -2,15 +2,15 @@
 
 ## path
 path=(
-  $HOME/bin
-  $HOME/.cabal/bin
-  $HOME/.phpenv/bin
-  $HOME/.composer/vendor/bin
-  /usr/local/opt/go/libexec/bin
-  /usr/local/heroku/bin
-  /usr/local/share/npm/bin
-  /usr/local/opt/ruby/bin
-  /usr/local/opt/coreutils/libexec/gnubin
+  $HOME/bin(N-/)
+  $HOME/.cabal/bin(N-/)
+  $HOME/.phpenv/bin(N-/)
+  $HOME/.composer/vendor/bin(N-/)
+  /usr/local/opt/go/libexec/bin(N-/)
+  /usr/local/heroku/bin(N-/)
+  /usr/local/share/npm/bin(N-/)
+  /usr/local/opt/ruby/bin(N-/)
+  /usr/local/opt/coreutils/libexec/gnubin(N-/)
   $path
 )
 
