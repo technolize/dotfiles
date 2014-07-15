@@ -213,6 +213,9 @@ set rtp+=~/src/github.com/golang/lint/misc/vim
 " golint
 autocmd BufWritePost,FileWritePost *.go execute 'Lint' | cwindow
 
+" QuickRun
+nnoremap <silent> <leader>r :QuickRun<CR>
+
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
