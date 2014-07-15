@@ -87,7 +87,7 @@ cleanup
 ## cask
 install brew-cask || true
 
-cask install keyremap4macbook || true
+cask install karabiner || true
 cask install seil || true
 cask install xquartz || true
 cask install iterm2 || true
