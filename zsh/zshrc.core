@@ -21,6 +21,7 @@ setopt list_packed
 setopt long_list_jobs
 setopt nolistbeep
 setopt no_beep
+setopt combining_chars
 setopt print_eightbit
 setopt prompt_subst
 setopt no_flow_control
