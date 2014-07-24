@@ -1,0 +1,5 @@
+" vimrc.bundle
+
+NeoBundle 'aklt/plantuml-syntax'
+NeoBundle 'vim-scripts/php-cs-fixer'
+
