@@ -4,18 +4,18 @@
 [ -f ~/.zsh/themes/tx.zsh-theme ] && source ~/.zsh/themes/tx.zsh-theme
 
 ## load modules
-[ -f ~/.zsh/zshrc.core ] && source ~/.zsh/zshrc.core
-[ -f ~/.zsh/antigen/antigen.zsh ] && source ~/.zsh/zshrc.antigen
-[ -f ~/.zsh/zshrc.extensions ] && source ~/.zsh/zshrc.extensions
-[ -f ~/.zsh/zshrc.aliases ] && source ~/.zsh/zshrc.aliases
-[ -f ~/.zsh/zshrc.functions ] && source ~/.zsh/zshrc.functions
+[ -f ~/.zsh/core.zsh ] && source ~/.zsh/core.zsh
+[ -f ~/.zsh/antigen/antigen.zsh ] && source ~/.zsh/antigen.zsh
+[ -f ~/.zsh/extensions.zsh ] && source ~/.zsh/extensions.zsh
+[ -f ~/.zsh/functions.zsh ] && source ~/.zsh/functions.zsh
+[ -f ~/.zsh/aliases.zsh ] && source ~/.zsh/aliases.zsh
 
 case ${OSTYPE} in
   darwin*)
-    [ -f ~/.zsh/zshrc.osx ] && source ~/.zsh/zshrc.osx
+    [ -f ~/.zsh/osx.zsh ] && source ~/.zsh/osx.zsh
     ;;
   linux*)
-    [ -f ~/.zsh/zshrc.linux ] && source ~/.zsh/zshrc.linux
+    [ -f ~/.zsh/linux.zsh ] && source ~/.zsh/linux.zsh
     ;;
 esac
 
