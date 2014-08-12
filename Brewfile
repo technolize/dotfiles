@@ -64,6 +64,7 @@ install wireshark || true
 install tcpdump || true
 install rtmpdump || true
 install gnupg || true
+install weechat --with-lua --with-perl --with-python --with-ruby || true
 
 ## programming
 install go || true
