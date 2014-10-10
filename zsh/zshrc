@@ -8,6 +8,8 @@
 [ -f ~/.zsh/antigen/antigen.zsh ] && source ~/.zsh/antigen.zsh
 [ -f ~/.zsh/extensions.zsh ] && source ~/.zsh/extensions.zsh
 [ -f ~/.zsh/functions.zsh ] && source ~/.zsh/functions.zsh
+[ -f ~/.zsh/peco.zsh ] && source ~/.zsh/peco.zsh
+[ -f ~/.zsh/keybinding.zsh ] && source ~/.zsh/keybinding.zsh
 [ -f ~/.zsh/aliases.zsh ] && source ~/.zsh/aliases.zsh
 
 case ${OSTYPE} in
