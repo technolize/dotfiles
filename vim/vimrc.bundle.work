@@ -2,4 +2,5 @@
 
 NeoBundle 'aklt/plantuml-syntax'
 NeoBundle 'vim-scripts/php-cs-fixer'
+NeoBundle 'vim-scripts/php-annotations-syntax'
 
