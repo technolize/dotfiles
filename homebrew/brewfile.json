@@ -39,6 +39,7 @@
     "tig",
     "gh",
     "ghq",
+    "ansible",
     "automake",
     "autoconf",
     "cmake",
@@ -76,6 +77,8 @@
     "flash",
     "karabiner",
     "seil",
+    "smoothmouse",
+    "bettertouchtool",
     "xquartz",
     "iterm2",
     "virtualbox",
@@ -85,9 +88,13 @@
     "imageoptim",
     "slate",
     "macdown",
-    "firefox",
+    "google-chrome",
     "chromium",
+    "firefox",
+    "thunderbird",
+    "skype",
     "transmit",
-    "tower"
+    "tower",
+    "kaleidoscope"
   ]
 }
