@@ -20,6 +20,8 @@ alias here='open .'
 alias -g C='| nkf -w | pbcopy'
 
 alias chrome='open -a "Google Chrome"'
+alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+alias mvim='/Applications/MacVim.app/Contents/MacOS/mvim'
 
 export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer
 

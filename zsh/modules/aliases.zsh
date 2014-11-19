@@ -25,9 +25,6 @@ alias rm='rm -iv'
 alias mv='mv -iv'
 alias cp='cp -iv'
 
-alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
-alias mvim='/Applications/MacVim.app/Contents/MacOS/mvim'
-
 alias -g G="| grep"
 alias -g L="| less"
 alias -g P="| peco"
