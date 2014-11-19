@@ -7,7 +7,9 @@ else
   echo "[Warning] z is not installed" 1>&2
 fi
 
-eval "$(direnv hook zsh)"
+if exists direnv; then
+  eval "$(direnv hook zsh)"
+fi
 
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 
