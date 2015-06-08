@@ -71,3 +71,6 @@ local.properties
 
 # node
 node_modules/*
+
+# bower
+bower_components/*

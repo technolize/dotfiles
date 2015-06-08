@@ -6,6 +6,7 @@ path=(
   $HOME/.cabal/bin(N-/)
   $HOME/.phpenv/bin(N-/)
   $HOME/.composer/vendor/bin(N-/)
+  $HOME/.pyenv/shims(N-/)
   /usr/local/opt/go/libexec/bin(N-/)
   /usr/local/heroku/bin(N-/)
   /usr/local/share/npm/bin(N-/)
@@ -37,7 +38,4 @@ export COPY_EXTENDED_ATTRIBUTES_DISABLE=1
 
 ## node
 export NODE_PATH=/usr/local/lib/node:/usr/local/lib/node_modules
-
-## android sdk
-export ANDROID_SDK_ROOT=/usr/local/opt/android-sdk
 

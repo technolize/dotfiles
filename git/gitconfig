@@ -37,6 +37,8 @@
 	history = log --graph --relative-date --name-status -5
 	append = commit --amend -C HEAD
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	ig = update-index --assume-unchanged
+	igc = update-index --no-assume-unchanged
 
 [pager]
 	log = diff-highlight | less
